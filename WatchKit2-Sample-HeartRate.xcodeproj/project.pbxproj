@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0960511B71123100A0C33A /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D405A491B71096C0062EC43 /* HealthKit.framework */; };
 		0D405A0A1B70625D0062EC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D405A091B70625D0062EC43 /* AppDelegate.swift */; };
 		0D405A0C1B70625D0062EC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D405A0B1B70625D0062EC43 /* ViewController.swift */; };
 		0D405A0F1B70625D0062EC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D405A0D1B70625D0062EC43 /* Main.storyboard */; };
@@ -16,9 +17,9 @@
 		0D405A1F1B70625D0062EC43 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D405A1D1B70625D0062EC43 /* Interface.storyboard */; };
 		0D405A211B70625D0062EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D405A201B70625D0062EC43 /* Assets.xcassets */; };
 		0D405A281B70625D0062EC43 /* WatchKit2-Sample-HeartRate WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0D405A271B70625D0062EC43 /* WatchKit2-Sample-HeartRate WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		0D405A2D1B70625D0062EC43 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D405A2C1B70625D0062EC43 /* InterfaceController.swift */; };
 		0D405A2F1B70625D0062EC43 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D405A2E1B70625D0062EC43 /* ExtensionDelegate.swift */; };
 		0D405A311B70625D0062EC43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D405A301B70625D0062EC43 /* Assets.xcassets */; };
+		0D48F17E1B7240B900E94FD1 /* HeartRateInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D48F17D1B7240B900E94FD1 /* HeartRateInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D0960501B71123100A0C33A /* WatchKit2-Sample-HeartRate WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchKit2-Sample-HeartRate WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		0D405A061B70625D0062EC43 /* WatchKit2-Sample-HeartRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchKit2-Sample-HeartRate.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D405A091B70625D0062EC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D405A0B1B70625D0062EC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,10 +78,12 @@
 		0D405A201B70625D0062EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D405A221B70625D0062EC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D405A271B70625D0062EC43 /* WatchKit2-Sample-HeartRate WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchKit2-Sample-HeartRate WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D405A2C1B70625D0062EC43 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		0D405A2E1B70625D0062EC43 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		0D405A301B70625D0062EC43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D405A321B70625D0062EC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D405A421B70F6FF0062EC43 /* WatchKit2-Sample-HeartRate.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "WatchKit2-Sample-HeartRate.entitlements"; sourceTree = "<group>"; };
+		0D405A491B71096C0062EC43 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.0.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		0D48F17D1B7240B900E94FD1 /* HeartRateInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D0960511B71123100A0C33A /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +108,7 @@
 		0D4059FD1B70625D0062EC43 = {
 			isa = PBXGroup;
 			children = (
+				0D405A491B71096C0062EC43 /* HealthKit.framework */,
 				0D405A081B70625D0062EC43 /* WatchKit2-Sample-HeartRate */,
 				0D405A1C1B70625D0062EC43 /* WatchKit2-Sample-HeartRate WatchKit App */,
 				0D405A2B1B70625D0062EC43 /* WatchKit2-Sample-HeartRate WatchKit Extension */,
@@ -123,6 +129,7 @@
 		0D405A081B70625D0062EC43 /* WatchKit2-Sample-HeartRate */ = {
 			isa = PBXGroup;
 			children = (
+				0D405A421B70F6FF0062EC43 /* WatchKit2-Sample-HeartRate.entitlements */,
 				0D405A091B70625D0062EC43 /* AppDelegate.swift */,
 				0D405A0B1B70625D0062EC43 /* ViewController.swift */,
 				0D405A0D1B70625D0062EC43 /* Main.storyboard */,
@@ -146,7 +153,8 @@
 		0D405A2B1B70625D0062EC43 /* WatchKit2-Sample-HeartRate WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				0D405A2C1B70625D0062EC43 /* InterfaceController.swift */,
+				0D0960501B71123100A0C33A /* WatchKit2-Sample-HeartRate WatchKit Extension.entitlements */,
+				0D48F17D1B7240B900E94FD1 /* HeartRateInterfaceController.swift */,
 				0D405A2E1B70625D0062EC43 /* ExtensionDelegate.swift */,
 				0D405A301B70625D0062EC43 /* Assets.xcassets */,
 				0D405A321B70625D0062EC43 /* Info.plist */,
@@ -216,17 +224,30 @@
 		0D4059FE1B70625D0062EC43 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = XuQing1001;
 				TargetAttributes = {
 					0D405A051B70625D0062EC43 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A3DSVN297H;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					0D405A171B70625D0062EC43 = {
 						CreatedOnToolsVersion = 7.0;
 					};
 					0D405A261B70625D0062EC43 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = A3DSVN297H;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -294,8 +315,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D48F17E1B7240B900E94FD1 /* HeartRateInterfaceController.swift in Sources */,
 				0D405A2F1B70625D0062EC43 /* ExtensionDelegate.swift in Sources */,
-				0D405A2D1B70625D0062EC43 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +449,14 @@
 		0D405A361B70625D0062EC43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WatchKit2-Sample-HeartRate WatchKit Extension/WatchKit2-Sample-HeartRate WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchKit2-Sample-HeartRate WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-HeartRate.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -442,10 +467,14 @@
 		0D405A371B70625D0062EC43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WatchKit2-Sample-HeartRate WatchKit Extension/WatchKit2-Sample-HeartRate WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchKit2-Sample-HeartRate WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-HeartRate.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -489,10 +518,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "WatchKit2-Sample-HeartRate/WatchKit2-Sample-HeartRate.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchKit2-Sample-HeartRate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-HeartRate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -500,10 +533,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "WatchKit2-Sample-HeartRate/WatchKit2-Sample-HeartRate.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "WatchKit2-Sample-HeartRate/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XuQing1001.WatchKit2-Sample-HeartRate";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -526,6 +563,7 @@
 				0D405A371B70625D0062EC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D405A391B70625D0062EC43 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-HeartRate WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +572,7 @@
 				0D405A3B1B70625D0062EC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D405A3D1B70625D0062EC43 /* Build configuration list for PBXNativeTarget "WatchKit2-Sample-HeartRate" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +581,7 @@
 				0D405A3F1B70625D0062EC43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
