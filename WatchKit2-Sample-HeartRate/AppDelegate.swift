@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import WatchConnectivity
+import HealthKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    let healthStore = HKHealthStore()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
@@ -41,6 +43,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    // authorization from watch
+    func applicationShouldRequestHealthAuthorization(application: UIApplication) {
+        self.healthStore.handleAuthorizationForExtensionWithCompletion { success, error in
+        }
+    }
 }
 
